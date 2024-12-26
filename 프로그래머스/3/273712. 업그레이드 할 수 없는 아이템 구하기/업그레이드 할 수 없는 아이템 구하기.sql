@@ -5,7 +5,3 @@ where (select sum(PARENT_ITEM_ID)
        from ITEM_TREE
        where PARENT_ITEM_ID = t.ITEM_ID) is null
 order by t.ITEM_ID desc;
-
-# select sum(PARENT_ITEM_ID)
-#        from ITEM_TREE
-#        where PARENT_ITEM_ID = 0;
